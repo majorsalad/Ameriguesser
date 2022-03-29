@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    background-color: #f9f5e9;
+    justify-content: center;
+}
+
+input{
+    background-color: #E4D1B9;
+    width: 100%;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin: 25px;
+}
+
+.button {
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    background-color: #162d35;
+}
+
+.content{
+    width: 33%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .state-image{
+    margin-left: 35%;
+}
+
+.main{
+    padding-top: 20%;
+}
+
+.state-image{
+    width: 200px;
+    height: 200px;
+}
+
+.title{
+    padding-left: 20px;
+    width: 100%;
+    text-align: center;
+    color: #162d35;
+}
+
+.title hr {
+    height: 5px;
+    background-color: #162d35;
+    border: none;
+}
+
+winning-message, incorrect-message, losing-message {
+    text-align: center;
+}

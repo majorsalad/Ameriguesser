@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ameriguesser.css">
+    <title>Document</title>
+</head>
+<body onload="initializeGame()">
+        <div class="content">
+            <div class="title">
+                <h1>AMERIGUESSER</h1>
+                <hr>
+            </div>
+
+            <div class="main">
+                <img class="state-image" src="./states/Alabama.jpg" alt="Alabama">
+                <form>
+                    <div class="input">
+                        <input type="text" name="first-guess" id="guess1">
+                    </div>
+                    <div class="input">
+                        <input type="text" name="second-guess" id="guess2">
+                    </div>
+                    <div class="input">
+                        <input type="text" name="third-guess" id="guess3">
+                    </div>
+                    
+                    <input class="input" type="text" name="input-entry" id="user-input" placeholder="Enter in state/territory name...">
+                    <input class="input button" type="button" value="GUESS" onclick="checkAnswer(document.getElementById('user-input').value)">
+                </form>
+            </div>
+            
+            <h3 class="winning-message" hidden>Congratulations! You guessed correctly!</h3>
+            <h3 class="incorrect-message" hidden>Incorrect! Try again.</h3>
+            <h3 class="losing-message" hidden>Yikes! Someone needs to review their geography!</h3>
+        </div>      
+
+        <script src="Ameriguesser.js"></script>
+</body>
+</html>
